@@ -1,3 +1,3 @@
 # [SnowStore]()
 
-Kindly change to dev branch to view the code
+## This is a running notes of the project will be updated and formatted at the end
