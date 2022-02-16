@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/logo-white.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ?FONT ASWOME IMPORT: FOR ICONS-->
@@ -18,11 +19,54 @@
     <!-- ?CSS IMPORT -->
     <link rel="stylesheet" href="/css/home.css">
 
+    <script defer src="/js/scrollToBottom.js"></script>
     <title>Snowstore</title>
 </head>
 
 <body>
-    <a href="/pages/authentication/auth-user.html">auth</a>
+    <nav class="pd-05 fx-row w-full bg-clr-gray-800 clr-gray-50">
+        <div class="nav-icon fx-row fx-ai-center pd-i-1025 h-3">
+            <img src="/assets/logo-white.png" alt="" class="h-2 w-2">
+            <a class="ff-festive pd-i-1025 f-2 clr-gray-50 fw-700" href="/index.html">Snowstore</a>
+        </div>
+        <div class="fx-row fx-ai-center cr-pt">
+            <i class="fa-solid fa-location-dot f-1025 pd-i-025"></i>
+            <p class="f-085"><b>Hello</b><br>Select your address</p>
+        </div>
+        <input type="text" placeholder="Search" class="pd-i-05 mg-i-1 brd-sm">
+        <ul class="fx-row fx-ai-center links">
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Christmas Tree's</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Tree hangings</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Clothing</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="/pages/authentication/auth-user.html">Sign-in/Sign-up</a>
+            </li>
+        </ul>
+    </nav>
+
+    <body>
+        <div class="hero-container p-rel">
+            <i class="p-abs fa-solid fa-angle-down scroll-down cr-pt fx-row fx-jc-center lft rgt"></i>
+            <h1 class="fx-row fx-jc-center fx-ai-center hero-title">
+                Snowstore for snow time
+            </h1>
+        </div>
+        <div class="categories fx-row ">
+            <div class="category-cloth fx-row fx-jc-center fx-ai-center">
+                <a href="#" class="category-title clr-gray-50 pd-i-0625">Winter Clothing</a>
+            </div>
+            <div class="category-wrapper fx-col">
+                <div class="category-decors fx-row fx-ai-center fx-jc-center ta-right">
+                    <a href="#" class="category-title clr-gray-50 pd-i-1">Decors and Accessories</a>
+                </div>
+                <div class="category-gift fx-row fx-ai-fe">
+                    <a href="#" class="category-title clr-gray-50 pd-i-0625">Gifts</a>
+                </div>
+            </div>
+            <div class="category-tree">
+                <a href="#" class="category-title clr-gray-50">Christmas trees</>
+            </div>
+        </div>
+    </body>
 </body>
 
 </html>
