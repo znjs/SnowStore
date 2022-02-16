@@ -1,4 +1,77 @@
-/* FOR TESTING THE CSS LINK */
-body {
-    background-color: bisque;
+.hero-container {
+    background-image: url("/assets/hero1.jpg");
+    background-size: cover;
+    height: calc(100vh-4rem);
+}
+
+.hero-title {
+    height: calc(100vh - 4rem);
+    font-size: 4rem;
+    font-family: 'Festive', cursive;
+    letter-spacing: 0.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.categories {
+    height: 100vh;
+}
+
+.category-cloth {
+    width: 34%;
+    background-image: url("/assets/winter-cloths.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.category-tree {
+    width: 34%;
+    background-image: url("/assets/christmas-tree2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.category-decors {
+    height: 50vh;
+    background-image: url("/assets/hanging2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.category-gift {
+    height: 50vh;
+    background-image: url("/assets/gifts.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.category-wrapper {
+    flex-grow: 1;
+}
+
+.category-title {
+    font-size: 4vw;
+}
+
+.scroll-down {
+    top: 70%;
+
+    font-size: 4rem;
+    animation: scrollDown infinite linear 2s;
+}
+
+@keyframes scrollDown {
+    0% {
+        top: 65%;
+    }
+
+    50% {
+        top: 75%;
+    }
+
+    100% {
+        top: 65%;
+    }
 }

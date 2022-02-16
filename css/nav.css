@@ -1,0 +1,15 @@
+nav>.nav-icon>a {
+    letter-spacing: 0.2rem;
+}
+
+nav>ul {
+    margin-left: auto;
+}
+
+nav>input {
+    flex-grow: 1;
+}
+
+nav {
+    height: 4rem;
+}
