@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/logo-white.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ?FONT ASWOME IMPORT: FOR ICONS-->
+    <script src="https://kit.fontawesome.com/0fde817728.js" crossorigin="anonymous"></script>
+
+    <!-- ?SNOWFLAKE UI IMPORT: FOR UTILITY CLASSES-->
+    <link rel="stylesheet" href="https://snowflakeui.netlify.app/css/components.css">
+
+    <!-- ?SHARED CSS CLASSES SNOWSTORE -->
+    <link rel="stylesheet" href="/css/shared.css">
+
+    <!-- ?CSS IMPORT -->
+    <link rel="stylesheet" href="/pages/checkout/checkout.css">
+
+    <script defer src="/js/scrollToBottom.js"></script>
+    <title>Cart | Snowstore</title>
+</head>
+
+<body>
+    <nav class="pd-05 fx-row w-full bg-clr-gray-800 clr-gray-50 fx-ai-center">
+        <div class="nav-icon fx-row fx-ai-center pd-i-1025 h-3">
+            <img src="/assets/logo-white.png" alt="" class="h-2 w-2">
+            <a class="ff-festive pd-i-1025 f-2 clr-gray-50 fw-700" href="/index-user.html">Snowstore</a>
+        </div>
+        <h2>Checkout</h2>
+        <ul class="fx-row fx-ai-center links">
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/wishlist.html">
+
+                    <span class="brd-round h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fa-solid fa-heart clr-red-500"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2</span>
+            </li>
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/cart.html">
+                    <span class="brd-round bg-clr-yellow-500 h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="cart-summary w-two-third fx-col mg-i-auto mg-b-5">
+            <div class="address-choice ">
+                <div class="fx-row fx-ai-center">
+                    <h3>Select your Address:</h3>
+                    <button class="bg-clr-gray-200 pd-05 brd-sm mg-i-05">Add an address:</button>
+                </div>
+                <div class="mg-b-05">
+                    <div class="mg-b-025">
+                        <input type="radio" name="address-option" value="Unselected" checked>
+                        <label for="address-option-1">
+                            <b>Ramesh:</b>
+                            #104, Sri Venkateswara tower, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="address-option" value="Unselected">
+                        <label for="address-option-1">
+                            <b>Suresh:</b>
+                            #104, Sri Venkateswara tower, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-summary mg-b-1">
+                <h3>Order Summary:</h3>
+                <div class="w-26 mg-05">
+                    <div class="fx-row fx-jc-sb fx-ai-center">
+                        <p class="w-10"><b>item</b></p>
+                        <p class="w-5"><b>quantity</b></p>
+                        <p class="w-5"><b>price</b></p>
+                    </div>
+                    <div class="fx-row fx-jc-sb fx-ai-center">
+                        <p class="w-10">Christmas festive Beetle</p>
+                        <p class="w-5">x 2</p>
+                        <p class="w-5">&#8377;601.00</p>
+                    </div>
+
+                    <div class="fx-row fx-jc-sb fx-ai-center">
+                        <p class="w-10">Christmas tree (decorative)</p>
+                        <p class="w-5">x 1</p>
+                        <p class="w-5">&#8377;750.50</p>
+                    </div>
+                    <hr>
+                    <div class="fx-row fx-jc-sb">
+                        <p><b>Total</b></p>
+                        <p class="w-5"><b>&#8377;1351.50</b></p>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-clr-yellow-300 pd-05 mg-0625 brd-sm w-max-10"><a
+                    href="/pages/checkout/success.html">Proceed to Payment</a></button>
+        </div>
+    </main>
+</body>
+
+</html>
