@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/logo-white.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ?FONT ASWOME IMPORT: FOR ICONS-->
+    <script src="https://kit.fontawesome.com/0fde817728.js" crossorigin="anonymous"></script>
+
+    <!-- ?SNOWFLAKE UI IMPORT: FOR UTILITY CLASSES-->
+    <link rel="stylesheet" href="https://snowflakeui.netlify.app/css/components.css">
+
+    <!-- ?SHARED CSS CLASSES SNOWSTORE -->
+    <link rel="stylesheet" href="/css/shared.css">
+
+    <!-- ?CSS IMPORT -->
+    <link rel="stylesheet" href="/pages/checkout/checkout.css">
+
+    <script defer src="/js/scrollToBottom.js"></script>
+    <title>Cart | Snowstore</title>
+</head>
+
+<body>
+    <nav class="pd-05 fx-row w-full bg-clr-gray-800 clr-gray-50">
+        <div class="nav-icon fx-row fx-ai-center pd-i-1025 h-3">
+            <img src="/assets/logo-white.png" alt="" class="h-2 w-2">
+            <a class="ff-festive pd-i-1025 f-2 clr-gray-50 fw-700" href="/index-user.html">Snowstore</a>
+        </div>
+        <div class="fx-row fx-ai-center cr-pt">
+            <i class="fa-solid fa-location-dot f-1025 pd-i-025"></i>
+            <p>Bangalore -560103</p>
+        </div>
+        <input type="text" placeholder="Search" class="pd-i-05 mg-i-1 brd-sm">
+        <ul class="fx-row fx-ai-center links">
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Christmas Tree's</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Tree hangings</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Clothing</a></li>
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/wishlist.html">
+
+                    <span class="brd-round h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fa-solid fa-heart clr-red-500"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2</span>
+            </li>
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/cart.html">
+
+                    <span class="brd-round bg-clr-yellow-500 h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2</span>
+            </li>
+        </ul>
+    </nav>
+    <main class="fx-row mg-2">
+        <div class="cart fx-grow mg-i-1">
+            <div class="fx-row fx-ai-center fx-jc-sb">
+                <h2>Wishlist</h2>
+                <p><i class="fa-solid fa-location-dot f-1025 pd-i-025"></i>Deliver to <b>BANGALORE - 560103</b></p>
+            </div>
+            <hr>
+            <div class="cart-items fx-col fx-ai-center">
+                <div class="mg-b-1 p-rel bg-clr-gray-50 h-15 w-full brd-sm o-hide brd-hov cr-pt fx-row">
+                    <div class="preview-img w-15">
+                        <img class="img-res-wd h-min-10" src="/assets/snoglobe2.jpg" alt="">
+                    </div>
+                    <div class="pd-i-0625 fx-col fx-wrap fx-jc-se w-full">
+                        <h3>Phantom rose Globe</h3>
+                        <h5>
+                            <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                            <span class="pd-i-0625">&#8377;300.50</span>
+                            <span class="clr-red-400">only</span>
+                        </h5>
+                        <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                        <div class="pd-b-1 fx-row mg-i-2 fx-ai-center fx-wrap">
+                            <div class="count-control brd-sm o-hide">
+                                <button class="decrease pd-025 bg-clr-yellow-300">-</button>
+                                <span class="pd-025">2</span>
+                                <button class="increase pd-025 bg-clr-yellow-300">+</button>
+                            </div>
+                            <button class="pd-0625 brd-sm mg-i-05 bg-clr-yellow-300">Move to cart</button>
+                            <button class="pd-0625 brd-sm mg-i-05">Remove</button>
+                        </div>
+                    </div>
+                    <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-lft mg-05"><i
+                            class="fa-solid fa-heart clr-red-400 "></i>
+                    </div>
+                </div>
+            </div>
+            <h2>Out of Stock (1 item)</h2>
+            <div class="cart-items fx-col fx-ai-center">
+
+                <div class="p-rel bg-clr-gray-50 h-15 w-full brd-sm o-hide brd-hov cr-pt fx-row">
+                    <div class="preview-img w-15">
+                        <img class="img-res-wd" src="/assets/christmas-tree2.jpg" alt="">
+                    </div>
+                    <div class="pd-i-0625 w-full fx-col fx-wrap fx-jc-se">
+                        <h3>Christmas Tree</h3>
+                        <h5>
+                            <span class="tx-lt clr-gray-500">&#8377;7800.85</span>
+                            <span class="pd-i-0625">&#8377;5600.50</span>
+                            <span class="clr-red-400">only</span>
+                        </h5>
+                        <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                        <div class="pd-b-1 fx-row mg-i-2 fx-ai-center">
+                            <div class="count-control brd-sm o-hide">
+                                <button class="decrease pd-025 bg-clr-yellow-300">-</button>
+                                <span class="pd-025">1</span>
+                                <button class="increase pd-025 bg-clr-yellow-300">+</button>
+                            </div>
+                            <button class="pd-0625 brd-sm mg-i-05 bg-clr-yellow-300">Move to Later</button>
+                            <button class="pd-0625 brd-sm mg-i-05">Remove</button>
+                        </div>
+                    </div>
+                    <h3 class="p-abs fx-row fx-jc-center fx-ai-center w-full h-full bg-trans clr-gray-50 z-top">Out
+                        of Stock
+                    </h3>
+                    <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-lft mg-05"><i
+                            class="fa-solid fa-heart clr-red-400 "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total w-min-24">
+            <h2>Total items (2 Items)</h2>
+            <hr>
+            <button class="w-full pd-0625 brd-sm mg-b-0625 bg-clr-yellow-300 fw-500 f-1">
+                <a href="/pages/checkout/cart.html">Goto cart</a>
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>
