@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/logo-white.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ?FONT ASWOME IMPORT: FOR ICONS-->
+    <script src="https://kit.fontawesome.com/0fde817728.js" crossorigin="anonymous"></script>
+
+    <!-- ?SNOWFLAKE UI IMPORT: FOR UTILITY CLASSES-->
+    <link rel="stylesheet" href="https://snowflakeui.netlify.app/css/components.css">
+
+    <!-- ?SHARED CSS CLASSES SNOWSTORE -->
+    <link rel="stylesheet" href="/css/shared.css">
+
+    <!-- ?CSS IMPORT -->
+    <link rel="stylesheet" href="/pages/product/product.css">
+
+    <title>Snowstore</title>
+</head>
+
+<body>
+    <nav class="pd-05 fx-row w-full bg-clr-gray-800 clr-gray-50">
+        <div class="nav-icon fx-row fx-ai-center pd-i-1025 h-3">
+            <img src="/assets/logo-white.png" alt="" class="h-2 w-2">
+            <a class="ff-festive pd-i-1025 f-2 clr-gray-50 fw-700" href="/index-user.html">Snowstore</a>
+        </div>
+        <div class="fx-row fx-ai-center cr-pt">
+            <i class="fa-solid fa-location-dot f-1025 pd-i-025"></i>
+            <p>Bangalore - 560103</p>
+        </div>
+        <input type="text" placeholder="Search" class="pd-i-05 mg-i-1 brd-sm">
+        <ul class="fx-row fx-ai-center links">
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Christmas Tree's</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Tree hangings</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Clothing</a></li>
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/wishlist.html">
+
+                    <span class="brd-round h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fa-solid fa-heart clr-red-500"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2</span>
+            </li>
+            <li class="p-rel mg-i-05">
+                <a href="/pages/checkout/cart.html">
+
+                    <span class="brd-round bg-clr-yellow-500 h-3 w-3 fx-row fx-jc-center fx-ai-center f-105">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </a>
+                <span
+                    class="p-abs brd-round notification rgt top bg-clr-green-600 f-075 clr-gray-50 fx fx-jc-center fx-ai-center">2</span>
+            </li>
+            <li class="p-rel mg-i-05">
+                <i
+                    class="fa-solid fa-user f-105 h-3 w-3 fx fx-jc-center fx-ai-center brd-round clr-gray-900 bg-clr-gray-50"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="p-rel fx">
+        <aside class="filters bg-clr-gray-100 pd-1">
+            <div class="fx fx-jc-sb">
+                <p>Filters</p>
+                <p class="cr-pt tx-ul f-085">Clear Filters</p>
+            </div>
+            <hr class="mg-b-0625">
+            <div class="pd-b-025">
+                <p>Customer Review</p>
+                <div class="pd-i-05 f-085">
+                    <input type="radio" name="Review" value="Unselected">
+                    <label for="Review">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>&nbsp;& above
+                    </label>
+                    <br>
+                    <input type="radio" name="Review" value="Unselected">
+                    <label for="Review">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>&nbsp;& above
+                    </label>
+                    <br>
+                    <input type="radio" name="Review" value="Unselected">
+                    <label for="Review">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>&nbsp;& above
+                    </label>
+                </div>
+            </div>
+            <div class="pd-b-025">
+                <p>Category</p>
+                <div>
+                    <div class="pd-i-05 f-085">
+                        <input type="checkbox" name="Checkbox-button-1" value="Selected" checked>
+                        <label for="Unselected">All</label>
+                        <br>
+                        <input type="checkbox" name="Clothing" value="Unselected">
+                        <label for="Clothing">Clothing</label>
+                        <br>
+                        <input type="checkbox" name="Christmas decorations" value="Unselected">
+                        <label for="Christmas-decorations">Christmas Decorations</label>
+                        <br>
+                        <input type="checkbox" name="Gifts" value="Unselected">
+                        <label for="Gifts">Gifts</label>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-b-025">
+                <p>Price</p>
+                <div class="pd-i-05 f-085">
+                    <p class="">Under &#8377;500</p>
+                    <p class="">Under &#8377;1000</p>
+                    <p class="">Under &#8377;1500</p>
+                    <div class="fx fx-wrap">
+                        <input class="mg-i-025 price-range w-4 h-2 brd-sm pd-i-025" type="number" min="0"
+                            placeholder="&#8377;MIN">
+                        <input class="price-range w-4 h-h-2 2 brd-sm pd-i-025" type="number" min="0"
+                            placeholder="&#8377;MAX">
+                        <button class="h-2 bg-clr-gray-300 pd-05 brd-sm mg-i-05 cr-pt">Go</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-b-025">
+                <p>Sort-by</p>
+                <div class="pd-i-05 f-085">
+                    <input type="radio" name="price-order" value="Unselected">
+                    <label for="price-order">price low-to-high</label>
+                    <br>
+                    <input type="radio" name="price-order" value="Unselected">
+                    <label for="price-order">price high-to-low`</label>
+                </div>
+            </div>
+            <div class="pd-b-025">
+                <p>Availability</p>
+                <div class="pd-i-05">
+                    <input type="checkbox" name="out-of-stock" value="Unselected">
+                    <label for="out-of-stock">Show out of Stock</label>
+                </div>
+            </div>
+        </aside>
+        <div class="product-list fx-row fx-wrap fx-jc-se fx-ai-center pd-1">
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/toy.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="/pages/product/product.html">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm">
+                            <i class="fas fa-shopping-cart"></i>AddTo Cart
+                        </button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 mg-05 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+            <div class="p-rel bg-clr-gray-50 w-15 brd-sm o-hide bg-clr-gray-50 brd-hov">
+                <img src="/assets/gifts.jpg" class="img-res-w" alt="toy-image">
+                <div class="pd-i-0625 ">
+                    <h3><a href="#">Car white toy</a></h3>
+                    <h5>
+                        <span class="tx-lt clr-gray-500">&#8377;450.85</span>
+                        <span class="pd-i-0625">&#8377;300.50</span>
+                        <span class="clr-red-400">only</span>
+                    </h5>
+                    <p class="f-075">Christmas festive VW Beetle with blank negative copy space</p>
+                    <div class="fx fx-ai-center pd-b-0125">
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-solid fa-star"></i>
+                        <i class="clr-yellow-400 fa-regular fa-star"></i>
+                        &nbsp;
+                        <i class="clr-blue-600 fa-solid fa-angle-down cr-pt"></i>
+                    </div>
+                    <div class="pd-b-1 fx-row fx-jc-se fx-ai-center">
+                        <button class="bg-clr-yellow-300 pd-05 brd-sm"><i class="fas fa-shopping-cart"></i> Add
+                            To Cart</button>
+                        <button class="bg-clr-gray-300 pd-05 brd-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="p-abs bg-clr-gray-50 brd-round h-105 w-105 item-center top-rgt mg-05"><i
+                        class="far fa-heart clr-red-400 "></i>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
