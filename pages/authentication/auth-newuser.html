@@ -23,32 +23,58 @@
 
 </head>
 
-<body class="g-parent g-one-one">
-    <div class="item-center h-screen">
-        <div class="sign-in-card brd-sm w-26 pd-2">
-            <h2 class="ff-festive clr-gray-50 ">Welcome to SnowStore</h2>
-            <p class="clr-gray-100">Please enter your details.</p>
-            <hr class="mg-b-025">
-            <div class="fx-col clr-gray-100">
-                <label for="Username" class="pd-b-05">Email:*</label>
-                <input class="pd-05" type="email" placeholder="Enter Your Email">
-            </div>
-            <div class="fx-col clr-gray-100">
-                <label for="Username" class="pd-b-05">Username:*</label>
-                <input class="pd-05" type="text" placeholder="Enter a Username">
-            </div>
-            <div class="fx-col clr-gray-100">
-                <label for="password" class="pd-b-05">Password:*</label>
-                <input class="pd-05" type="password" placeholder="Enter Your Password">
-            </div>
-            <div class="clr-gray-50 pd-b-1">
-                <input type="checkbox" name="Remember-Me" value="Unselected">
-                <label for="Remember-Me">Remember me</label>
-            </div>
-            <button class="pd-05 mg-b-0125 brd-sm bg-clr-gray-800 clr-gray-100 ">Sign Up</button>
+<body>
+    <nav class="pd-05 fx-row w-full bg-clr-gray-800 clr-gray-50">
+        <div class="nav-icon fx-row fx-ai-center pd-i-1025 h-3">
+            <img src="/assets/logo-white.png" alt="" class="h-2 w-2">
+            <a class="ff-festive pd-i-1025 f-2 clr-gray-50 fw-700" href="/index.html">Snowstore</a>
         </div>
-    </div>
-    <div></div>
+        <div class="fx-row fx-ai-center cr-pt">
+            <i class="fa-solid fa-location-dot f-1025 pd-i-025"></i>
+            <p class="f-085"><b>Hello</b><br>Select your address</p>
+        </div>
+        <input type="text" placeholder="Search" class="pd-i-05 mg-i-1 brd-sm">
+        <ul class="fx-row fx-ai-center links">
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Christmas Tree's</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Tree hangings</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="#">Clothing</a></li>
+            <li class="pd-i-1"><a class="clr-gray-50" href="/pages/authentication/auth-user.html">Sign-in/Sign-up</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="g-parent g-one-one">
+        <div class="item-center h-screen-bg">
+            <div class="sign-in-card brd-sm w-26 pd-2">
+                <h2 class="ff-festive clr-gray-50 ">Welcome to SnowStore</h2>
+                <p class="clr-gray-100">Please enter your details.</p>
+                <hr class="mg-b-025">
+                <div class="fx-col clr-gray-100">
+                    <label for="Username" class="pd-b-05">Email:*</label>
+                    <input class="pd-05" type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="fx-col clr-gray-100">
+                    <label for="Username" class="pd-b-05">Username:*</label>
+                    <input class="pd-05" type="text" placeholder="Enter a Username">
+                </div>
+                <div class="fx-col clr-gray-100">
+                    <label for="password" class="pd-b-05">Password:*</label>
+                    <input class="pd-05" type="password" placeholder="Enter Your Password">
+                </div>
+                <div class="clr-gray-50 pd-b-1">
+                    <input type="checkbox" name="Remember-Me" value="Unselected">
+                    <label for="Remember-Me">Remember me</label>
+                </div>
+                <div class="fx fx-ai-center fx-jc-se">
+                    <button class="pd-05 mg-b-0125 brd-sm bg-clr-gray-800"><a class="clr-gray-100"
+                            href="/index-user.html">Sign
+                            Up</a>
+                    </button>
+                    <a class="clr-gray-100" href="/pages/authentication/auth-user.html">Already have an Account?</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
