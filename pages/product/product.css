@@ -28,3 +28,10 @@
     margin-inline: auto;
     overflow: hidden;
 }
+
+
+@media only screen and (max-width:785px) {
+    main>aside {
+        display: none;
+    }
+}
