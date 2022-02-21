@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/assets/logo-white.svg" height="40" width="40" alt="Snowstore logo"/>
+  <img src="/assets/logo-white.svg" height="100" width="100" alt="Snowstore logo"/>
   
 # [Snowstore](https://snowstore.netlify.app/)
 
