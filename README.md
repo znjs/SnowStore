@@ -8,7 +8,7 @@ Snowstore for you Snow needs
 </div>
 
 <div style="diplay:flex;" align="center">
-<img height="60" src="/assets/undraw_web_shopping_re_owap.svg"/>
+<img height="200" src="/assets/undraw_web_shopping_re_owap.svg"/>
 </div>
 
 ## **Table of contents**
