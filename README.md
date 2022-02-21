@@ -38,7 +38,16 @@ Snowstore is an E-commerce platform for all your winter and christmas need, you 
 
 ### **Screenshot**
 
-## NEED TO UPDATE IN GITHUB
+- Landing Page
+![image](https://user-images.githubusercontent.com/60209418/154884106-9e1e35b4-d5aa-42a2-a85d-f81ae1e283da.png)
+![image](https://user-images.githubusercontent.com/60209418/154884134-060e0e1f-bb73-447b-9156-5fb4c02c7a06.png)
+- Login Page
+![image](https://user-images.githubusercontent.com/60209418/154884165-6623e420-da5f-43a2-a174-2064babf6175.png)
+- Product List Page
+![image](https://user-images.githubusercontent.com/60209418/154884221-1f423183-85d9-4984-8309-6f1d1bd76e97.png)
+- Cart
+![image](https://user-images.githubusercontent.com/60209418/154884262-caad0564-d769-401e-b894-d9e0b5441cf1.png)
+
 
 <br />
 
