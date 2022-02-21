@@ -21,7 +21,6 @@ Snowstore for you Snow needs
   - [**Table of contents**](#table-of-contents)
   - [**Overview**](#overview)
     - [**Screenshot**](#screenshot)
-  - [NEED TO UPDATE IN GITHUB](#need-to-update-in-github)
   - [**My process**](#my-process)
     - [**Built with**](#built-with)
     - [**What I learned**](#what-i-learned)
